@@ -8,6 +8,15 @@
   margin-top: 126px;
 }
 
-img {
+.planet-image {
   justify-self: center;
+  position: relative;
+
+  .geology-image {
+    position: absolute;
+    width: 129px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

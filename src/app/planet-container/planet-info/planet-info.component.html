@@ -9,8 +9,14 @@
   </p>
 
   <div class="btns">
-    <button><span>01</span> Overview</button>
-    <button><span>02</span> Internal Structure</button>
-    <button><span>03</span> Surface Geology</button>
+    <button (click)="handleImageChange('planet', planet.name)">
+      <span>01</span> Overview
+    </button>
+    <button (click)="handleImageChange('internal', planet.name)">
+      <span>02</span> Internal Structure
+    </button>
+    <button (click)="handleImageChange('geology', planet.name)">
+      <span>03</span> Surface Geology
+    </button>
   </div>
 </article>

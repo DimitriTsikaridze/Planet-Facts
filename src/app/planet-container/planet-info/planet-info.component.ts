@@ -1,4 +1,10 @@
-import { ChangeDetectionStrategy, Component, Input } from "@angular/core"
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+} from "@angular/core"
 import { Planet } from "../../planet"
 
 @Component({
@@ -9,4 +15,10 @@ import { Planet } from "../../planet"
 })
 export class PlanetInfoComponent {
   @Input("info") planet: Planet
+
+  @Output() changeImage = new EventEmitter<{ type: string; name: string }>()
+
+  handleImageChange(type: string, name: string) {
+    this.changeImage.emit({ type, name: name.toLowerCase() })
+  }
 }
