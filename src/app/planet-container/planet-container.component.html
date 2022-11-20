@@ -1,6 +1,5 @@
 <ng-container *ngIf="planet$ | async as planet">
   <img [src]="planet.images.planet" alt="" />
-
   <app-planet-info [info]="planet"></app-planet-info>
   <app-planet-stats [stats]="planet"></app-planet-stats>
 </ng-container>

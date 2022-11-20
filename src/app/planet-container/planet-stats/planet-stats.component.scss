@@ -1,3 +1,25 @@
 :host {
-  display: block;
+  display: flex;
+  gap: 30px;
+  margin-block: 87px 56px;
+  grid-column: span 2;
+}
+
+.stat {
+  width: 255px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  padding: 20px 20px 27px 23px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 11px;
+  opacity: .5;
+}
+
+h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
 }
