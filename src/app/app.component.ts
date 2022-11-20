@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http"
 import { ChangeDetectionStrategy, Component } from "@angular/core"
+import { PlanetsService } from "./planets.service"
 
 @Component({
   selector: "app-root",
@@ -8,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from "@angular/core"
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private planetsService: PlanetsService) {}
 
   ngOnInit() {}
 }

@@ -1,0 +1,11 @@
+<h2>THE PLANETS</h2>
+<nav>
+  <ul>
+    <li
+      [routerLink]="link.name.toLowerCase()"
+      *ngFor="let link of links$ | async"
+    >
+      {{ link.name | uppercase }}
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,32 @@
+:host {
+  height: 85px;
+  padding-inline: 32px 40px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+
+ul,
+:host {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  gap: 33px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-right: auto;
+}
+
+li {
+  opacity: .75;
+  transition: opacity .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
