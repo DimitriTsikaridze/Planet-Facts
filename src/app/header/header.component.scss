@@ -1,12 +1,18 @@
 :host {
+  display: block;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+header {
   height: 85px;
   padding-inline: 32px 40px;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 
 ul,
-:host {
+header {
   display: flex;
   align-items: center;
 }
@@ -33,4 +39,8 @@ li {
   &:hover {
     opacity: 1;
   }
+}
+
+.active {
+  opacity: 1;
 }
