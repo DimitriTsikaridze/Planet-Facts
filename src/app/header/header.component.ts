@@ -1,6 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from "@angular/core"
-import { PlanetsService } from "../planets.service"
-import { Observable } from "rxjs"
+import { ChangeDetectionStrategy, Component } from "@angular/core"
+import { PLANETS } from "../../assets/data"
 
 @Component({
   selector: "app-header",
@@ -8,12 +7,6 @@ import { Observable } from "rxjs"
   styleUrls: ["./header.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent implements OnInit {
-  constructor(private planetsService: PlanetsService) {}
-
-  links$: Observable<any>
-
-  ngOnInit(): void {
-    this.links$ = this.planetsService.planets$
-  }
+export class HeaderComponent {
+  links = PLANETS.map((planet) => planet.name)
 }

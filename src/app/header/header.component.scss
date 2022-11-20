@@ -21,10 +21,14 @@ h2 {
   margin-right: auto;
 }
 
+h2,
+li {
+  cursor: pointer;
+}
+
 li {
   opacity: .75;
   transition: opacity .2s ease-in-out;
-  cursor: pointer;
 
   &:hover {
     opacity: 1;

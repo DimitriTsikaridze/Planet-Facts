@@ -8,6 +8,7 @@
 button {
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 img,
@@ -17,7 +18,8 @@ svg {
 }
 
 a {
-  text-decoration: none;
+  all: unset;
+  cursor: pointer;
 }
 
 li {
