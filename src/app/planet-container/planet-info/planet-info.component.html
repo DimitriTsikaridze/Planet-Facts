@@ -1,0 +1,16 @@
+<article>
+  <h1>{{ planet.name | uppercase }}</h1>
+  <p class="description">{{ planet.overview.content }}</p>
+  <p class="source">
+    Source :
+    <a target="_blank" [href]="planet.overview.source">
+      Wikipedia <img src="/assets/icon-source.svg" alt="Arrow Icon" />
+    </a>
+  </p>
+
+  <div class="btns">
+    <button><span>01</span> Overview</button>
+    <button><span>02</span> Internal Structure</button>
+    <button><span>03</span> Surface Geology</button>
+  </div>
+</article>
