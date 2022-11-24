@@ -16,7 +16,7 @@ import { PlanetStatsComponent } from "./planet-container/planet-stats/planet-sta
     PlanetStatsComponent,
     PlanetInfoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
