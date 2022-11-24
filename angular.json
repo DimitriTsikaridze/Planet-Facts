@@ -135,7 +135,14 @@
           "builder": "@nguniversal/builders:prerender",
           "options": {
             "routes": [
-              "/"
+              "/mercury",
+              "/venus",
+              "/earth",
+              "/mars",
+              "/jupiter",
+              "/saturn",
+              "/uranus",
+              "/neptune"
             ]
           },
           "configurations": {
@@ -149,6 +156,18 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": true,
+            "ssr": false,
+            "browserTarget": "planets-fact-site:build:production",
+            "firebaseProject": "planetfacts",
+            "firebaseHostingSite": "planetfacts",
+            "serverTarget": "planets-fact-site:server:production",
+            "prerenderTarget": "planets-fact-site:prerender:production"
+          }
         }
       }
     }

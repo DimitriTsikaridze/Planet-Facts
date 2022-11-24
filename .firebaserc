@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "planetfacts": {
+      "hosting": {
+        "planets-fact-site": [
+          "planetfacts"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "planetfacts"
+  }
+}
